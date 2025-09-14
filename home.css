@@ -130,6 +130,57 @@ h2 { color: var(--blue); font-size: 1.8rem; margin: 28px 0 12px; }
   box-shadow: 0 10px 26px rgba(11,18,32,0.12);
 }
 
+
+.education-container {
+  max-width: var(--content-max);
+  margin: 30px 55px; /* top-bottom 30px, left-right 55px */
+  overflow-x: auto; /* allows horizontal scroll on small screens */
+}
+
+.education-stats {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 12px; 
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-stats th, .education-stats td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.education-stats thead tr {
+  background-color: var(--blue);
+  color: white;
+  font-weight: 600;
+}
+
+.education-stats tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+  color: #0b1220;
+
+}
+
+.education-stats tbody tr:nth-child(even) {
+  background-color: #ffffff;
+  color: #0b1220;
+}
+
+.education-stats a {
+  color: #0b1220;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.education-stats a:hover {
+  text-decoration: underline;
+  color: var(--yellow);
+}
+
 /* ================= FLOAT CARDS ================= */
 .three-floats {
   display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between;
@@ -248,4 +299,5 @@ a{
 .footer-sources a:hover {
   color: var(--yellow);
 }
+
 
